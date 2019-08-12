@@ -1,0 +1,11 @@
+---
+applications:
+- name: stdout-printer
+  buildpacks:
+    - binary_buildpack
+  memory: 1M
+  disk_quota: 1M
+  command: ./stdout-printer
+  health-check-type: process
+  no-route: true
+  path: bin
